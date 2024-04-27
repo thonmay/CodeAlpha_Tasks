@@ -1,0 +1,15 @@
+#generating finonacci series
+def NthFibonacciNum(n):
+
+    if (n == 1):
+        return 1
+    elif(n == 0):
+        return 0
+    
+    else:    
+        return NthFibonacciNum(n - 1) + NthFibonacciNum ( n -2)
+
+userInput = input("Enter the Number: ")
+n = int(userInput)
+print(f"{n}th Fibonacci Number is: {NthFibonacciNum(n)}")
+    
